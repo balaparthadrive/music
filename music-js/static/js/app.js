@@ -412,7 +412,7 @@
 
         link.setAttribute('type', 'text/css');
         link.setAttribute('rel', 'stylesheet');
-        link.setAttribute('href', '//html5music.herokuapp.com/css/style.css');
+        link.setAttribute('href', '/css/style.css');
 
         link.addEventListener('load', function () {
             setTime(0);
