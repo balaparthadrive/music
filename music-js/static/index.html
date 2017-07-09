@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Audio Visual</title>
+        <style type="text/css">
+            html, body {
+                margin: 0;
+                padding: 0;
+                width: 100%;
+                height: 100%;
+            }
+        </style>
+    </head>
+    <body>
+        <script type="text/javascript" src="/js/app.js">
+        {
+            "autoplay": true,
+            "volume": 1,
+            "size": 1024,
+            "smoothing": 0.6,
+            "mindecibels": -50,
+            "maxdecibels": -15,
+            "frame": 30,
+            "container": "position:relative;background-color:#000;width:100%;height:100%",
+            "controls": "position:absolute;left:0;bottom:0",
+            "title": "position:absolute;right:0;bottom:0;padding:10px;color:#FFF;font-size:16px;font-family:\"Average Sans\"",
+            "effects": [
+                {
+                    "type": "fft",
+                    "position": "horizontalright",
+                    "colors": [
+                        "#0FF",
+                        "#0BB",
+                        "#088",
+                        "#000"
+                    ],
+                    "size": 10,
+                    "style": "position:absolute;bottom:0;left:0;width:100%;height:100%"
+                },
+                {
+                    "type": "fft",
+                    "position": "horizontalmirror",
+                    "colors": [
+                        "#0FF",
+                        "#0BB",
+                        "#088",
+                        "#077"
+                    ],
+                    "size": 4,
+                    "style": "position:absolute;bottom:0;left:0;width:100%;height:100%"
+                },
+                {
+                    "type": "fft",
+                    "position": "horizontalleft",
+                    "colors": [
+                        "#0FF",
+                        "#0BB",
+                        "#088",
+                        "#000"
+                    ],
+                    "size": 10,
+                    "style": "position:absolute;bottom:0;left:0;width:100%;height:100%"
+                },
+                {
+                    "type": "waveform",
+                    "position": "horizontal",
+                    "color": "#000",
+                    "size": 1,
+                    "style": "position:absolute;bottom:0;left:0;width:100%;height:50%"
+                }
+            ],
+            "audio": [
+                {
+                    "mp3": "/media/song2.mp3",
+                    "title": "My First Song"
+                },
+                {
+                    "mp3": "/media/waka.mp3",
+                    "title": "Waka Waka"
+                },
+                {
+                    "mp3": "/media/smtm.mp3",
+                    "title": "show me the meaning"
+                },
+                {
+                    "mp3": "/media/qp.mp3",
+                    "title": "Quit Playing"
+                }
+            ]
+        }
+        </script>
+    </body>
+</html>
